@@ -1,0 +1,15 @@
+﻿MVC
+
+Model : data representation for the view
+
+View : HTML +CSS +JS +Razor
+
+Controller:
+
+HTTP requests:
+
+GET / put/ post/ delete
+
+http://localhost7093/home/
+
+controller name/action name/id as a parameter
