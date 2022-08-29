@@ -13,6 +13,12 @@ namespace ApplicationCore.Contracts.Services
 
         // called by home/index
         // services will always return models/viewmodels/DTO (data transfer objects)
-        List<MovieCardModel> GetTop30GrossingMovies();
+        Task<List<MovieCardModel>> GetTopRevenueMovies();
+
+        Task<MovieDetailsModel> GetMovieDetails(int movieId);
+        
+
+        Task<PagedResultSet<MovieCardModel>> GetMoviesByPagination(int genreId, int pageSize = 30, int page = 1);
+        
     }
-}
+} 

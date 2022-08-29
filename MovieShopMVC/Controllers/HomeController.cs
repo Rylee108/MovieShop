@@ -18,22 +18,20 @@ namespace MovieShopMVC.Controllers
         }
         
         //Action methods
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             //go to database and get the data
             //tightly coupled code
             //losely coupled code
-            
-            var movies = _movieService.GetTop30GrossingMovies();
+
+            var movieCards = await _movieService.GetTopRevenueMovies();
+            return View(movieCards);
             //IMovieServices test = new movieService();
             //var movieService = new MovieService();
-            
-
             //3 ways we csn send the data from controller action method to views
             //ViewBag 
             //ViewData
             //*** Strongly typed models **
-            return View(movies);
         }
 
         public IActionResult Privacy()
