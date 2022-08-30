@@ -54,3 +54,20 @@ dotnet tool update --global dotnet-ef
     1. Data Annotations => using System.ComponentModel.DataAnnotations;
     2. Fluent API => much more powerful and has more options
 
+Reguster => email/password
+
+1.public access => home page, movie details page, cast details, login, register
+2.customer access (loged in) => view/edit profile, purchase movie, review/rating, favorite
+3. Admin Access (User loged in and have role of admin)=> create movie, creat cast, get most purchased movie
+
+   Register                     
+    email                   password          Salt
+ u1 abc@abc.com             (Pas##4HKLtt   +  adfafafdafdaf)        Hashing  -Pdbk/Bcrypt => dakhfkjdadhf769as7f90adufadnfn
+ u2 xyz@abc.com             (Pas##4HKLtt   +  hfhhgdhgdfhggds)
+
+
+
+ Login
+ u1 abc@abc.com 
+
+

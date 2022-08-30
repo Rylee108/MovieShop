@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace ApplicationCore.Contracts.Repositories
 {
-    public class IGenreRepository
+    public interface IGenreRepository
     {
-        
+        Task<List<Genre>> GetAllGenres();
     }
 }
